@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/35c4f0c859.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/main.css">
+    <title>LIBRARY ODIN PROJECT</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="head-box">
+            <h1>Library app</h1>
+        </div>
+
+        <form action="">
+            <div class="form-item">
+                <label title="title">Title</label>
+                <input type="text" name="title" placeholder="set title" maxlength="45">
+            </div>
+            <div class="form-item">
+                <label title="author">Author</label>
+                <input type="text" name="author" placeholder="set author" maxlength="45">
+            </div>
+            <div class="form-item">
+                <label title="read">Status</label>
+                <select name="readStatus" title="status">
+                    <option value="0" selected disabled>--</option>
+                    <option value="read">Read</option>
+                    <option value="not read">Not Read</option>
+                </select>
+            </div>
+            <div class="form-item form-button">
+                <input type="submit" value="Add" class="add-btn">
+            </div>
+        </form>
+        <div class="items-list">
+            <table>
+                <tr class="table-head">
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>Status</th>
+                    <th></th>
+                </tr>
+                <tbody class="table-items">
+                </tbody>
+
+            </table>
+        </div>
+
+    </div>
+
+
+    <script src="/script.js"></script>
+</body>
+
+</html>

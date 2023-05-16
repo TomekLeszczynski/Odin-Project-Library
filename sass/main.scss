@@ -1,0 +1,129 @@
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+html {
+	font-size: 62.5%;
+}
+body {
+	display: flex;
+	justify-content: center;
+	width: 100dvw;
+	height: 100dvh;
+	font-family: 'Raleway', Helvetica, sans-serif;
+	color: #212427;
+}
+
+.container {
+	max-width: 900px;
+	padding: 2rem;
+	margin-top: 5rem;
+	.head-box {
+		h1 {
+			font-size: 3.5rem;
+			font-style: italic;
+		}
+		p {
+			margin: 2.5rem 0;
+			font-size: 1.6rem;
+			font-weight: 300;
+		}
+	}
+	form {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr) 100px 100px;
+		gap: 3.5rem;
+		width: 100%;
+		margin: 5rem 0;
+		.form-item {
+			display: flex;
+			flex-direction: column;
+		}
+		label {
+			margin-bottom: 0.5rem;
+			font-weight: 600;
+			font-size: 1.6rem;
+		}
+		input:focus,
+		select:focus {
+			outline: 0.05em solid transparent;
+			border: 0.05em solid #33c3f0;
+		}
+		input,
+		select,
+		option {
+			padding: 0.5rem;
+			border-radius: 0.5rem;
+			border: 0.05em solid #d1d1d1;
+			height: 3.8rem;
+		}
+		.form-button {
+			display: flex;
+			flex-direction: column;
+			justify-content: end;
+		}
+		.add-btn {
+			height: 3.8rem;
+			color: white;
+			background: #33c3f0;
+			border: none;
+			border-radius: 0.5rem;
+			font-size: 1.4rem;
+			transition: background 0.3s;
+			cursor: pointer;
+		}
+		.add-btn:hover {
+			background: #2cadd4;
+		}
+	}
+	.items-list {
+		width: 100%;
+		display: table;
+		font-size: 1.6rem;
+		table {
+			width: 100%;
+			border-collapse: collapse;
+			tr {
+				text-align: left;
+				border-bottom: 0.05em solid #d1d1d1;
+				th,
+				td {
+					padding: 1rem 2rem;
+				}
+				th:last-child,
+				td:last-child {
+					padding-right: 0;
+					text-align: right;
+				}
+				th:first-child,
+				td:first-child {
+					padding-left: 0;
+				}
+				.read-status {
+					cursor: pointer;
+				}
+			}
+			i{
+				padding: 1rem;
+				font-size: 2rem;
+			}
+			.table-item-button {
+				padding: 1rem 2rem;
+				color: white;
+				background: #e41a67;
+				border: none;
+				border-radius: 0.5rem;
+				font-size: 1.4rem;
+				transition: background 0.3s;
+				cursor: pointer;
+			}
+			.table-item-button:hover {
+				background: #b61552;
+			}
+			.table-items{
+				text-transform: capitalize;
+			}
+		}
+	}
+}
