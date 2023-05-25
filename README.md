@@ -27,7 +27,7 @@ The Odin Project project assignment: https://www.theodinproject.com/lessons/node
 
 # Status
 
-Completed
+Completed. 
 
 # Conclusions & Issues
 
@@ -36,3 +36,6 @@ Project strictly follows assumptions of the project but for better UX should con
 - Sorting by each of table headings
 - Editing existing positions
 - Selecting multiple items for deleting
+
+Branch "refactored_script" stores script file refactored to use classes. The app keeps the same features.
+
